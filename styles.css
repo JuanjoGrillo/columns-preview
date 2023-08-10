@@ -1,0 +1,124 @@
+html {
+    font-size: 10px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;  
+    width: 90%;
+}
+.column {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.column > * {
+    margin-bottom: 1rem;
+}
+.primera {
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    background-color: hsl(31, 77%, 52%);
+}
+.segunda {
+    background-color: hsl(184, 100%, 22%);
+}
+.tercera {
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    background-color: hsl(179, 100%, 13%);
+}
+.column h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.8rem;
+    letter-spacing: 0.2rem;
+}
+.column p {
+    font-size: 1.2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+    line-height: 170%;
+}
+.buttonContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: end;
+}
+button {
+    margin-top: 2.4rem;
+    font-size: 1.2rem;
+    background-color: white;
+    border: none;
+    border-radius: 2rem;
+    width: fit-content;
+    padding: 0.8rem 1.6rem;
+}
+.primera button {
+    color:hsl(31, 77%, 52%);
+}
+.segunda button {
+    color: hsl(184, 100%, 22%);
+}
+.tercera button {
+    color: hsl(179, 100%, 13%);
+}
+footer {
+    background-color: rgb(80, 80, 80);
+    height: 4rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+footer p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.6rem;
+}
+@media screen and (min-width: 376px){    
+    .container {
+        width: 75%;
+        flex-direction: row;
+    }
+    .column {
+        padding: 40px;
+    }
+    .column > * {
+        margin-bottom: 2rem;
+    }
+    .primera {
+        border-radius: 1.2rem 0 0 1.2rem;
+    }
+    .tercera {
+        border-radius: 0 1.2rem 1.2rem 0;
+    }
+    .column h2 {
+        font-size: 3.6rem;
+    }
+    .column p {
+        font-size: 1.6rem;
+    }
+    button {
+        margin-top: 4rem;
+        font-size: 1.6rem;
+        border-radius: 2.4rem;
+        padding: 1.2rem 2rem;
+    }
+}
+
